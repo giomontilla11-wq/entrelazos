@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101529">
+  <meta name="description" content="Entrelazos: experiencia transmedia colaborativa para fortalecer habilidades sociales mediante gamificación con estudiantes de grado cuarto.">
+  <title>ENTRELAZOS | Guardianes de la convivencia</title>
+  <link rel="icon" href="assets/illustrations/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido principal</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Entrelazos: volver al inicio">
+      <span class="brand-symbol" aria-hidden="true">✳</span><span class="brand-words">ENTRE<span>LAZOS</span><small>Guardianes de la convivencia</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio" data-view="inicio" class="nav-link active">Inicio</a>
+      <a href="#mapa" data-view="mapa" class="nav-link">Explorar misiones</a>
+      <a href="#laboratorio" data-view="laboratorio" class="nav-link">Nuestro acuerdo</a>
+      <a href="#docentes" data-view="docentes" class="nav-link">Docentes</a>
+    </nav>
+    <span class="top-chip" title="Prototipo para pilotaje con acompañamiento docente"><span aria-hidden="true">●</span> Prototipo pedagógico</span>
+  </header>
+  <main id="contenido">
+    <section class="view view-active" id="view-inicio" aria-labelledby="titulo-inicio">
+      <div class="hero-wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="spark">✦</span> UNA AVENTURA PARA TRANSFORMAR LA CONVIVENCIA</div>
+          <h1 id="titulo-inicio">Las mejores conexiones <em>no son de wifi.</em></h1>
+          <p>En Villa Entrepuentes se han apagado los cuatro vínculos que mantenían unidos a sus barrios. Tu equipo tiene una misión: reconstruirlos con ideas, empatía, palabras respetuosas y acuerdos.</p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary" id="hero-start">Iniciar la aventura <span aria-hidden="true">↗</span></button>
+            <a href="#mapa" class="btn btn-secondary">Ver las 8 misiones <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-facts" aria-label="Características de la experiencia"><span>✳ 4 habilidades sociales</span><span>✳ 8 misiones cooperativas</span><span>✳ Digital + aula</span></div>
+        </div>
+        <div class="hero-world" aria-label="Ilustración de Villa Entrepuentes: cuatro islas conectadas por puentes">
+          <div class="world-caption">EL MUNDO DE ENTREPUENTES <span>·</span> EXPLORA SUS BARRIOS</div>
+          <svg viewBox="0 0 540 480" role="img" aria-label="Cuatro barrios de colores unidos por puentes" class="world-art">
+            <defs>
+              <linearGradient id="worldbg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#263357"/><stop offset="1" stop-color="#1a2340"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="5" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <ellipse cx="272" cy="242" rx="226" ry="207" fill="url(#worldbg)" opacity=".85"/>
+            <g fill="none" stroke="#6b779e" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 12" opacity=".7"><path d="M170 155 Q275 102 385 155"/><path d="M154 177 Q112 256 170 328"/><path d="M385 175 Q433 255 386 330"/><path d="M185 339 Q274 409 373 338"/><path d="M181 166 Q258 245 374 328"/><path d="M377 166 Q288 255 182 328"/></g>
+            <g transform="translate(90 75)"><ellipse cx="75" cy="103" rx="72" ry="34" fill="#0d1e31"/><path d="M7 98 Q-4 51 49 34 Q108 8 144 66 L136 101 Q61 145 7 98Z" fill="#54d4b8"/><path d="M33 83 L73 40 L117 84Z" fill="#fff0b0"/><rect x="50" y="75" width="49" height="35" rx="5" fill="#2d6885"/><rect x="70" y="88" width="13" height="22" rx="2" fill="#fff0b0"/><circle cx="124" cy="42" r="18" fill="#fff1ba"/><text x="76" y="137" font-size="18" fill="#dffff7" text-anchor="middle" font-weight="700">EQUIPO</text></g>
+            <g transform="translate(309 76)"><ellipse cx="75" cy="101" rx="71" ry="34" fill="#0d1e31"/><path d="M7 96 Q-5 41 55 36 Q111 10 145 69 L135 100 Q61 143 7 96Z" fill="#e5adfb"/><path d="M36 85 Q66 24 100 82" stroke="#fff0cc" stroke-width="17" fill="none" stroke-linecap="round"/><circle cx="67" cy="48" r="17" fill="#3d2b71"/><circle cx="67" cy="48" r="7" fill="#fde4ff"/><circle cx="108" cy="60" r="9" fill="#fff3b2"/><text x="75" y="137" font-size="18" fill="#f7deff" text-anchor="middle" font-weight="700">ESCUCHA</text></g>
+            <g transform="translate(92 267)"><ellipse cx="75" cy="103" rx="72" ry="34" fill="#0d1e31"/><path d="M7 98 Q-4 51 49 34 Q108 8 144 66 L136 101 Q61 145 7 98Z" fill="#ffbb78"/><rect x="48" y="44" width="60" height="64" rx="9" fill="#7d4d68"/><path d="M61 56 H95 M61 69 H91 M61 82 H85" stroke="#fff0cb" stroke-width="6" stroke-linecap="round"/><circle cx="115" cy="43" r="17" fill="#fff2af"/><text x="75" y="137" font-size="18" fill="#fff4dd" text-anchor="middle" font-weight="700">PALABRAS</text></g>
+            <g transform="translate(310 268)"><ellipse cx="75" cy="103" rx="72" ry="34" fill="#0d1e31"/><path d="M7 98 Q-4 51 49 34 Q108 8 144 66 L136 101 Q61 145 7 98Z" fill="#82a8fb"/><path d="M23 88 Q57 71 86 90 Q105 107 130 83" stroke="#e4fdff" stroke-width="10" fill="none" stroke-linecap="round"/><rect x="60" y="43" width="29" height="48" rx="8" fill="#fff3ba"/><path d="M74 42 V21" stroke="#fff3ba" stroke-width="6"/><circle cx="74" cy="18" r="9" fill="#fff3ba" filter="url(#glow)"/><text x="75" y="137" font-size="18" fill="#e0edff" text-anchor="middle" font-weight="700">ACUERDOS</text></g>
+            <g transform="translate(246 216)"><circle cx="25" cy="25" r="34" fill="#171f3b" stroke="#fbdd89" stroke-width="4"/><path d="M25 8 L31 19 L43 25 L31 31 L25 43 L19 31 L7 25 L19 19Z" fill="#ffe193"/><circle cx="25" cy="25" r="6" fill="#fff"/></g>
+            <g fill="#ffefb5" opacity=".8"><circle cx="60" cy="240" r="3"/><circle cx="486" cy="255" r="3"/><circle cx="257" cy="64" r="3"/><circle cx="272" cy="434" r="3"/><circle cx="452" cy="74" r="2"/><circle cx="87" cy="399" r="2"/></g>
+          </svg>
+          <div class="world-bottom"><span>✧ COOPERAR</span><span>✧ ESCUCHAR</span><span>✧ DIALOGAR</span></div>
+        </div>
+      </div>
+      <div class="intro-rail">
+        <div class="intro-lead"><span class="section-kicker">TU MISIÓN</span><h2>Una historia que se vive en muchos lugares.</h2></div>
+        <div class="medium"><span class="medium-icon">📻</span><strong>Radio del barrio</strong><span>Escucha pistas que no están en el juego.</span></div>
+        <div class="medium"><span class="medium-icon">📖</span><strong>Historieta</strong><span>Descubre cómo comenzó cada problema.</span></div>
+        <div class="medium"><span class="medium-icon">🎮</span><strong>Decisiones</strong><span>Conversen y elijan cómo actuar.</span></div>
+        <div class="medium"><span class="medium-icon">✂️</span><strong>Cartas impresas</strong><span>Lleva la aventura a tu salón.</span></div>
+      </div>
+      <div class="quote-banner"><span aria-hidden="true">❝</span><p>En Entrelazos nadie vence a sus compañeros: <strong>el equipo avanza cuando todas las voces cuentan.</strong></p><a href="#mapa">Conocer los barrios →</a></div>
+    </section>
+
+    <section class="view" id="view-mapa" aria-labelledby="titulo-mapa" hidden>
+      <div class="page-head"><div><div class="eyebrow"><span class="spark">✦</span> MAPA DE LA AVENTURA</div><h1 id="titulo-mapa">Explora los <em>cuatro barrios.</em></h1><p>Elige cualquier misión. En cada barrio encontrarás una historia, un mensaje de radio, decisiones en equipo y un reto que continúa fuera de la pantalla.</p></div><div class="progress-block" aria-live="polite"><div class="progress-top"><span>VÍNCULOS RECONSTRUIDOS</span><strong id="progress-count">0 / 8</strong></div><div class="progress-bar"><span id="progress-fill"></span></div><small>Avance anónimo de esta sesión; no es una calificación.</small><button class="text-button" id="reset-progress" type="button">Reiniciar avance de esta sesión</button></div></div>
+      <div class="districts" id="districts"></div>
+      <div class="soft-note"><span>💡</span><p><strong>Antes de elegir:</strong> las respuestas del simulador son oportunidades para dialogar. La docente o el docente acompaña cada actividad y observa cómo se relacionan realmente los equipos.</p></div>
+    </section>
+
+    <section class="view" id="view-laboratorio" aria-labelledby="titulo-lab" hidden>
+      <div class="page-head"><div><div class="eyebrow"><span class="spark">✦</span> LABORATORIO DE CONVIVENCIA</div><h1 id="titulo-lab">Escribamos un <em>acuerdo vivo.</em></h1><p>Los mensajes de radio trajeron cuatro palabras para reconstruir el Gran Puente. Compleméntenlas con lo que experimentaron con sus compañeros.</p></div></div>
+      <div class="lab-layout">
+        <div class="lab-main">
+          <div class="panel-title"><span class="panel-emoji">🪄</span><div><strong>El cofre de las cuatro palabras</strong><small>Estas claves aparecen en las transmisiones de radio.</small></div></div>
+          <div class="keywords" id="keywords"><div>🤝 <b>COOPERAR</b></div><div>👂 <b>ESCUCHAR</b></div><div>💬 <b>EXPRESAR</b></div><div>🕊️ <b>ACORDAR</b></div></div>
+          <form id="pact-form" class="pact-form">
+            <label for="pact-one">Cuando hacemos un trabajo en equipo, nos comprometemos a…</label><textarea id="pact-one" maxlength="220" rows="2" placeholder="Por ejemplo: repartir las tareas y escuchar todas las ideas."></textarea>
+            <label for="pact-two">Cuando alguien está triste o piensa diferente, podemos…</label><textarea id="pact-two" maxlength="220" rows="2" placeholder="Por ejemplo: preguntar qué necesita sin burlarnos."></textarea>
+            <label for="pact-three">Cuando aparece un conflicto, elegimos…</label><textarea id="pact-three" maxlength="220" rows="2" placeholder="Por ejemplo: parar, hablar con respeto y llegar a un acuerdo."></textarea>
+            <div class="form-actions"><button class="btn btn-primary" type="submit">Crear nuestro acuerdo <span aria-hidden="true">↗</span></button><button type="button" class="btn btn-secondary" id="clear-pact">Limpiar</button></div>
+          </form>
+          <div class="pact-result" id="pact-result" hidden aria-live="polite"><span class="section-kicker">NUESTRO PACTO</span><h2>El Gran Puente tiene nuevas palabras</h2><div id="pact-output"></div><div class="form-actions"><button class="btn btn-primary" id="print-pact" type="button">Imprimir acuerdo</button><button class="btn btn-secondary" id="download-pact" type="button">Guardar texto (.txt)</button></div></div>
+        </div>
+        <aside class="lab-side"><div class="aside-icon">✳</div><h2>El siguiente capítulo no está en la pantalla.</h2><p>Conviertan el acuerdo en un pequeño mural en papel. Cada integrante puede dibujar una acción concreta para ayudar a que se cumpla.</p><div class="line"></div><p><strong>Pregunta de cierre:</strong> ¿Qué haremos mañana, en una situación real, para vivir nuestro acuerdo?</p><a class="aside-link" href="tarjetas.html" target="_blank" rel="noopener">Abrir las cartas para imprimir ↗</a></aside>
+      </div>
+    </section>
+
+    <section class="view" id="view-docentes" aria-labelledby="titulo-docente" hidden>
+      <div class="page-head"><div><div class="eyebrow"><span class="spark">✦</span> ESPACIO DE MEDIACIÓN PEDAGÓGICA</div><h1 id="titulo-docente">Guía para <em>docentes e investigadores.</em></h1><p>Una propuesta de implementación coherente con el anteproyecto de Leidy Johanna Zambrano Salazar, articulada con las clases de informática y la Investigación Acción Participativa.</p></div></div>
+      <div class="teacher-intro"><div><span>CONTEXTO</span><strong>Grado 4-9 · Sede Agualongo</strong><small>25 estudiantes, entre 9 y 10 años; equipos sugeridos de cinco.</small></div><div><span>SECUENCIA PROPUESTA</span><strong>8 sesiones</strong><small>Dos por habilidad; tiempos ajustables al horario de informática.</small></div><div><span>PROPÓSITO</span><strong>Aprender en relación</strong><small>La plataforma media; la habilidad se observa en la interacción real.</small></div></div>
+      <div class="teacher-columns">
+        <div class="teacher-main"><h2>Ruta pedagógica sugerida</h2><p class="section-explain">Cada sesión articula un episodio digital con una acción presencial de interdependencia real. Estos tiempos son orientativos, no establecidos por el anteproyecto.</p><div id="teacher-sessions" class="session-list"></div></div>
+        <aside class="teacher-side"><h2>Documentación de la investigación</h2><p>El documento propone planificación, acción, observación y reflexión; escala de pretest–postest, bitácora de sesión, matriz de conductas, encuesta, entrevista y grupo focal.</p>
+        <a class="resource-link" href="tarjetas.html" target="_blank" rel="noopener"><span>🗂️</span><div><strong>8 cartas de campo imprimibles</strong><small>Retos presenciales complementarios</small></div><span>↗</span></a>
+        <a class="resource-link" href="instrumentos.html" target="_blank" rel="noopener"><span>📋</span><div><strong>Plantillas de observación</strong><small>Bitácora y matriz para imprimir</small></div><span>↗</span></a>
+        <div class="teacher-warning"><strong>Protección y ética</strong><p>La aplicación no solicita nombres, fotografías, correos ni datos de menores, ni transmite resultados. Los instrumentos de investigación deben usarse únicamente tras autorización institucional, consentimiento de acudientes, asentimiento y revisión con el asesor.</p></div>
+        <div class="teacher-warning subdued"><strong>Importante para interpretar resultados</strong><p>Completar retos o conseguir sellos no demuestra por sí mismo un cambio de habilidad social. El anteproyecto plantea triangulación y comparación pretest–postest sin inferir causalidad.</p></div></aside>
+      </div>
+      <details class="project-method"><summary>Fundamentación y vínculo con el anteproyecto <span>+</span></summary><p><strong>Pregunta de investigación:</strong> ¿De qué manera la gamificación como estrategia pedagógica de enseñanza y aprendizaje virtual incide en la enseñanza y el aprendizaje de habilidades sociales en estudiantes de grado cuarto de la sede Agualongo?</p><p><strong>Cuatro dimensiones:</strong> cooperación y trabajo en equipo; empatía y escucha activa; comunicación asertiva; autocontrol y resolución de conflictos. Cada una cuenta con dos misiones y conductas observables vinculadas con la Tabla 1 y los anexos D y E del documento.</p><p><strong>Alcance:</strong> este sitio es un prototipo tecnológico y didáctico propuesto a partir del anteproyecto, no una intervención validada ni una publicación institucional oficial.</p></details>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-brand"><span class="brand-symbol">✳</span><div><strong>ENTRELAZOS</strong><small>Aprender a convivir también es una aventura.</small></div></div><p>Prototipo transmedia basado en el anteproyecto de Leidy Johanna Zambrano Salazar · Maestría en Educación Virtual · Universidad de Nariño · 2026.</p><span>Diseñado para uso mediado en el aula. Sin cuentas ni datos personales.</span></footer>
+
+  <div class="mission-overlay" id="mission-overlay" hidden>
+    <div class="mission-backdrop" id="mission-backdrop"></div>
+    <section class="mission-dialog" role="dialog" aria-modal="true" aria-labelledby="mission-title" tabindex="-1" id="mission-dialog">
+      <header class="mission-top"><div class="mini-brand">✳ <span>ENTRELAZOS</span> / EPISODIO <span id="mission-num"></span></div><button class="icon-button" type="button" id="close-mission" aria-label="Cerrar la misión">✕</button></header>
+      <div id="mission-content" class="mission-content"></div>
+    </section>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
